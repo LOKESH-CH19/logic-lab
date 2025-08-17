@@ -10,9 +10,15 @@ Description:
                                       1 1
                                      1 2 1
                                     1 3 3 1
+           so we store a 2-d array each ith array in 2-d array represent the elements of the ith roe elements.
+            
 Approach:
-        
-
+        yeah,the approach is simple the n dexcribe no.of rows in the triangle . 
+        intially row 1 has [1] and row 2 has [1,1].
+        for each row, begin and end should be 1.
+        For the middle values, add two numbers above from the previous row.
+        Repeat until you have n rows
+            
 Time Complexity: O(n^2)
 Space Complexity: O(n^2)
 """
@@ -31,7 +37,6 @@ class Solution:
             arr1=[1]
             for j in range(i-1):
                 temp=sum(arr[i-1][j:j+2])
-                # print(arr[i-1][i-2:i])
                 arr1.append(temp)
             arr1.append(1)
             arr.append(arr1)
