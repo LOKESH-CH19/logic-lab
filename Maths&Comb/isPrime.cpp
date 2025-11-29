@@ -35,4 +35,5 @@ Enter a number: 57
 
 Enter a number: 97
 97 is a prime number.
+
 ============================================================*/
