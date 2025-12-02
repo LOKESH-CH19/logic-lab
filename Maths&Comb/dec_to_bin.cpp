@@ -21,3 +21,8 @@ int main(){
     cout<<"Binary representation of "<<n<<" is: "<<toBin(n)<<endl;
     
 }
+
+/*===========================================
+Enter a decimal number: 10
+Binary representation of 10 is: 1010
+================================================*/
